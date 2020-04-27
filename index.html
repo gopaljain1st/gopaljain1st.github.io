@@ -183,17 +183,27 @@ I am a very kind of person. i always believe in karma and i love to help other p
     <div class="container py-lg-5">
        <h3 class="w3_head mb-5" style="color: #000000;">My Projects</h3>
    <div class="row news-grids mt-lg-5 mt-4 text-center">
-            <div class="col-md-6 gal-img">
-                <a href="#gal1"><img src="images/bookstore.jpg"  style="width: 500px; height: 350px;"alt="news image" class="img-fluid"></a>
+            <div class="textWithBlurredBg">
+                <img src="images/bookstore.jpg" onclick="test('gal1');" alt="news image" class="img-fluid">
+                <h2>Jain Book Store</h2>
             </div>
-            <div class="col-md-6 proj-1 gal-img">
-                <a href="#gal2"><img src="images/studentportal.jpg" alt="news image" class="img-fluid"></a>
+            <script>
+function test(s)
+{
+  window.location="file:///C:/Users/hp/Desktop/theme/conjoint_web/index.html#"+s;
+}
+        </script>
+            <div class="textWithBlurredBg">
+                <img src="images/studentportal.jpg" onclick="test('gal2');" alt="news image" class="img-fluid">
+<h2>Student Portal</h2>
             </div>
-            <div class="col-md-6 mt-5 gal-img">
-                <a href="#gal3"><img src="images/food.jpg" alt="news image" class="img-fluid"></a>
+            <div class="textWithBlurredBg">
+                <img src="images/food.jpg" onclick="test('gal3');" alt="news image" class="img-fluid">
+<h2>Book My Meal</h2>
             </div>
-            <div class="col-md-6 mt-5 gal-img">
-                <a href="#gal4"><img src="images/parking.jpg" alt="news image" class="img-fluid"></a>
+            <div class="textWithBlurredBg">
+                <img src="images/parking.jpg" onclick="test('gal4');" alt="news image" class="img-fluid">
+<h2>Icon Parking</h2>
             </div>
         </div>
     </div>
@@ -224,7 +234,7 @@ I am a very kind of person. i always believe in karma and i love to help other p
     <!-- //popup -->
     <!-- popup-->
     <div id="gal3" class="pop-overlay animate" >
-        <div class="popup" style="width: 380px;">
+        <div class="popup" >
             <img src="images/bookmymeal.png" alt="Popup Image" class="img-fluid" />
             <p class="mt-4">Bookmymeal is a food order application here user can book food using
 android application this applicationn have two model one for mobile
@@ -237,8 +247,11 @@ and another one is web is for admin panel its my major project</p>
     <!-- popup-->
     <div id="gal4" class="pop-overlay animate">
         <div class="popup">
-            <img src="images/g5.jpg" alt="Popup Image" class="img-fluid" />
-            <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+            <img src="images/iconparking.png" alt="Popup Image" class="img-fluid" />
+            <p class="mt-4">Icon Parking is a android application which is used to reserve parking
+slot in metro cities. it is a running model of our idea .
+</p>
+<a href="https://github.com/gopaljain1st/Icon-Parking">Source Code</a>
             <a class="close" href="#gallery">&times;</a>
         </div>
     </div>
