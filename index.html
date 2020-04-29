@@ -4,7 +4,7 @@
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
-    <link rel = "icon" href = "https://img.icons8.com/ios-filled/50/000000/marker-t.png" type = "image/x-icon">
+    <link rel = "icon" href = "https://img.icons8.com/ios-filled/50/000000/marker-g.png" type = "image/x-icon">
     <!--<meta name="keywords" content="Conjoint Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
   -->
@@ -83,7 +83,8 @@
 						<ul class="menu">
 							<li class="active"><a href="#home" class="scroll" style="color: #000000;">Home</a></li>
 							 <li class="mt-sm-3"><a href="#about" class="scroll" style="color: #000000;">About</a></li>
-							<li class="mt-sm-3"><a href="#services" class="scroll" style="color: #000000;">Services</a></li>
+               <li class="mt-sm-3"><a href="#projects" class="scroll" style="color: #000000;">Projects</a></li>
+            <li class="mt-sm-3"><a href="#services" class="scroll" style="color: #000000;">Services</a></li>
 							<li class="mt-sm-3"><a href="#news" class="scroll" style="color: #000000;">News</a></li>
               <li class="mt-sm-3"><a href="#contact" class="scroll" style="color: #000000;">Contact</a></li>
                         </ul>
@@ -93,17 +94,19 @@
         <!-- //header -->
     </div>
     <div class="main">
-        <div class="banner-text-w3ls" id="home">
-			<div class="container">
+      <div class="layer">
+        <div class="banner-text-w3ls" id="home" >
+          <div id="text"  style=" color: #ffffff; font-size: 30px; font-family:Snell Roundhand, cursive;  font-weight: bold;margin-left:40px;">" </div>
+          <div id="test"  style=" color: #000000; font-size: 30px;  font-family:Snell Roundhand, cursive; font-weight: bold; margin-left:40px;"> "</div>
+    	<div class="container" style="margin-top:70px;">
                 <div>
-                    <h1 style="color: #fff; font-weight: bold;" >Hi There,<br>I am Gopal Jain. </h1>
-					<h4  style="color: #fff; font-weight: bold; " ><br>" The way you live <br> describes your <br> Sucess!! "</h4>
-          <form method="get" action="resume.pdf">
-             <button type="submit" class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr">My Resume</button>
+  <form method="get" action="resume.pdf">
+             <button type="submit" class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr" style="color:#FFFFFF; background-color: #000000;">My Resume</button>
           </form>
                 </div>
             </div>
         </div>
+      </div>
 		<!-- about -->
 <section class="slide-wrapper" id="about">
 	<h3 class="w3_head mb-4" style="color: #000000;">About Me </h3>
@@ -185,7 +188,7 @@ function test(s)
 window.location="https://gopaljain1st.github.io/#"+s;
 }
 </script>
-<section class="gallery" style="background-color: #fff;" id="gallery">
+<section class="gallery" style="background-color: #fff;" id="projects">
     <div class="container py-lg-5">
        <h3 class="w3_head mb-5" style="color: #000000;">My Projects</h3>
    <div class="row news-grids mt-lg-5 mt-4 text-center">
@@ -259,7 +262,7 @@ slot in metro cities. it is a running model of our idea .
     <!-- //popup -->
 </section>
 <!-- services -->
-<section class="services" id="services">
+<!--<section class="services" id="services">
 	<div class="container">
 		<h3 class="w3_head mb-4 text-left"> Services</h3>
 		<p class="iner mt-md-5 text-left"> Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. Primis aliquam mus lacinia lobortis.Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. </p>
@@ -326,10 +329,11 @@ slot in metro cities. it is a running model of our idea .
 				</li>
 			</ul>
 	</div>
-</section>
+</section>-->
 		<!-- //services -->
 		<!-- news -->
-       <div class="news" id="news">
+    <section class="news" id="news">
+
 		<h3 class="w3_head mb-4 text-left"> News</h3>
 		<p class="iner mt-md-5 text-left"> Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. Primis aliquam mus lacinia lobortis.Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. </p>
 				<div class="row news-grids-left mt-5">
@@ -360,7 +364,8 @@ slot in metro cities. it is a running model of our idea .
 					</div>
 				</div>
 
-		</div>
+
+  </section>
 <!-- //news -->
 <!-- contact -->
 	 <section class="wedo" id="contact">
@@ -393,4 +398,88 @@ slot in metro cities. it is a running model of our idea .
     </div>
 
 </body>
+<script>
+function sendEmail(email,message)
+{
+  var s="mailto:"+email+"?subject=<Contact Through Portfolio>&body="+message;
+  window.open(s);
+	/*Email.send({
+	Host: "gopaljain1st.@gmail.com",
+	Username : "gopaljain1st",
+	Password : "Jain@2209",
+	To : 'gopaljain1st.@gmail.com',
+	From : ""+email,
+	Subject : "<Contact Through Portfolio>",
+	Body : ""+message,
+	}).then(
+		message => alert("mail sent successfully")
+	);*/
+}
+document.addEventListener('DOMContentLoaded', function (event) {
+
+    var dataText = [
+        ' Hi there, ',
+        "I am  Competitve",
+        "I have Good knowledge ",
+        "I am Good ",
+        '"The Way You Code',
+    ];
+    var test=[
+      ' I am Gopal Jain. ',
+      "Programmer.",
+      "in Java/Android ",
+      "as Backend Developer",
+      'Describe The Way You Live"',
+    ];
+
+    // type one text in the typwriter
+    // keeps calling itself until the text is finished
+    function typeWriter(text,test,i,j, fnCallback) {
+        // chekc if text isn't finished yet
+        if (i < (text.length))
+        {
+          document.getElementById("test").innerHTML=".";
+            // add next character to h1
+            document.getElementById("text").innerHTML = text.substring(0, i + 1) +
+                '<span aria-hidden="true" class="banner_text_w3ls"></span>';
+
+            // wait for a while and call this function again for next character
+            setTimeout(function () {
+                typeWriter(text,test, i + 1, j, fnCallback)
+            }, 100);
+        }
+        else if(j<test.length)
+         {
+           // add next character to h1
+           document.getElementById("test").innerHTML = test.substring(0, j + 1) +
+               '<span aria-hidden="true" class="banner_text_w3ls"></span>';
+
+           // wait for a while and call this function again for next character
+           setTimeout(function () {
+               typeWriter(text,test,i ,j + 1, fnCallback)
+           }, 100);
+         }
+
+        // text finished, call callback if there is a callback function
+        else if (typeof fnCallback == 'function') {
+            // call callback after timeout
+            setTimeout(fnCallback, 100);
+        }
+    }
+    // start a typewriter animation for a text in the dataText array
+    function StartTextAnimation(i) {
+        // check if dataText[i] exists
+        if (i < dataText[i].length) {
+            // text exists! start typewriter animation
+            typeWriter(dataText[i],test[i], 0,0, function () {
+                // after callback (and whole text has been animated), start next text
+                StartTextAnimation(i + 1);
+            });
+        }
+    }
+    // start the text animation
+    StartTextAnimation(0);
+});
+</script>
+
 </html>
