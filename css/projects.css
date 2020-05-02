@@ -34,7 +34,7 @@
   .textWithBlurredBg h2{
     top:45%
   }
-  
+
 
   .textWithBlurredBg:hover :not(img){
     opacity:1;
