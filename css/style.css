@@ -87,7 +87,7 @@ figure {
   @media screen and (max-width: 768px) {
     #colorlib-aside {
       width: 350px;
-
+      height: auto;
       -moz-transform: translateX(-360px);
       -webkit-transform: translateX(-360px);
       -ms-transform: translateX(-360px);
